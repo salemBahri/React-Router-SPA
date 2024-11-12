@@ -1,0 +1,335 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding-bottom: 60px; /* Space for footer */
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    /* , url('hero-image.jpg') */
+    background-size: cover;
+    background-position: center;
+    height:70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.hero-team {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    /* , url('hero-image.jpg') */
+    background-size: cover;
+    background-position: center;
+    height:40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 15px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-cards .card {
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    transition: transform 0.3s ease;
+}
+
+.feature-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-cards .card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature-cards .card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.services h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services .service {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services .service:hover {
+    transform: translateY(-5px);
+}
+
+.services .service h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.services .service p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.services .btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.services .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contact h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #555;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Team Cards */
+.team-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-cards .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.team-cards .card img {
+    width: 120px;
+    border-radius: 4%;
+    margin-bottom: 20px;
+    border: 1px solid #000c1a;
+    transition: transform 0.3s ease;
+}
+
+.team-cards .card img:hover {
+    transform: scale(1.1);
+}
+
+.team-cards .card h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.team-cards .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.team-cards .card .role {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #007bff;
+}
